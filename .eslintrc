@@ -1,0 +1,13 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:node/recommended"
+    ],
+    "env": {
+      "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
+    }
+  }
+  
