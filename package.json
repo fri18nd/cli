@@ -2,7 +2,10 @@
   "name": "cli",
   "version": "0.0.0",
   "description": "Cli helper tool for i18n",
-  "main": "src/index.js",
+  "bin": {
+    "eslint": "./bin/fri18nd.js"
+  },
+  "main": "./src/api.js",
   "repository": "git@github.com:fri18nd/cli.git",
   "author": "fri18nd",
   "license": "MIT",
@@ -11,7 +14,7 @@
     "node": ">=8.10.0"
   },
   "scripts": {
-    "run": "node ./src/index.js",
+    "run": "node ./bin/fri18nd.js",
     "lint": "eslint src/**"
   },
   "dependencies": {

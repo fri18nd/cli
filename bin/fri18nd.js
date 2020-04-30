@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 /* eslint no-console:off */
 
@@ -23,12 +24,9 @@ function onFatalError(error) {
 //------------------------------------------------------------------------------
 // Execution
 //------------------------------------------------------------------------------
-console.log('WOW');
 (async function main() {
   process.on('uncaughtException', onFatalError);
   process.on('unhandledRejection', onFatalError);
-
-  console.log('execution');
 
   // Otherwise, call the CLI.
   process.exitCode = await require('../src/index').execute(
