@@ -8,6 +8,8 @@
     },
     "parserOptions": {
         "ecmaVersion": 2020
+    },
+    "rules": {
+      "eol-last": ["error", "always"]
     }
   }
-  
